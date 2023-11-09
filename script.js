@@ -15,7 +15,8 @@ const APILoad1 = () => {
       const svg = document.getElementsByClassName("bd-placeholder-img");
       console.log(cards);
       for (let i = 0; i < cards.length; i++) {}
-    });
+    })
+    .catch((error) => console.log(error));
 };
 window.onload = () => {
   const loadBtn = document.querySelector(".btn-primary");
